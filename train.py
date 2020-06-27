@@ -1,7 +1,4 @@
 from __future__ import print_function, division
-import sys
-sys.path.append('core')
-
 import argparse
 import os
 import cv2
@@ -15,9 +12,9 @@ import torch.optim as optim
 import torch.nn.functional as F
 
 from torch.utils.data import DataLoader
-from raft import RAFT
+from core.raft import RAFT
 from evaluate import validate_sintel, validate_kitti
-import datasets
+from core import datasets
 
 # exclude extremly large displacements
 MAX_FLOW = 1000

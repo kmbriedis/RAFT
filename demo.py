@@ -1,6 +1,3 @@
-import sys
-sys.path.append('core')
-
 import argparse
 import os
 import cv2
@@ -9,9 +6,9 @@ import torch
 import torch.nn.functional as F
 from PIL import Image
 
-import datasets
-from utils import flow_viz
-from raft import RAFT
+from core import datasets
+from core.utils import flow_viz
+from core.raft import RAFT
 
 
 DEVICE = 'cuda'

@@ -1,6 +1,3 @@
-import sys
-sys.path.append('core')
-
 from PIL import Image
 import cv2
 import argparse
@@ -11,9 +8,8 @@ import torch
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
 
-import datasets
-from utils import flow_viz
-from raft import RAFT
+from core import datasets
+from core.raft import RAFT
 
     
 
